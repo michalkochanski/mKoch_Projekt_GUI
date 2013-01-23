@@ -15,12 +15,9 @@ public class PersonManager {
 		Person newPerson = new Person();
 
 		newPerson.setFirstName(person.getFirstName());
-		newPerson.setZipCode(person.getZipCode());
+		newPerson.setLastName(person.getLastName());
 		newPerson.setPin(person.getPin());
-		newPerson.setDateOfBirth(person.getDateOfBirth());
-		newPerson.setMarried(person.isMarried());
-		newPerson.setWeight(person.getWeight());
-		newPerson.setNumOfChildren(person.getNumOfChildren());
+		newPerson.setAbout(person.getAbout());
 
 		db.add(newPerson);
 	}

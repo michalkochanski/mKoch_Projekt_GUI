@@ -18,8 +18,18 @@
       </h:column>
       
       <h:column>
+        <f:facet name="header">#{msg.personLastNameLabel}</f:facet>
+        #{item.lastName}
+      </h:column>
+      
+      <h:column>
         <f:facet name="header">#{msg.personPinLabel}</f:facet>
-        #{item.pin}
+        <b>#{item.pin}</b>
+      </h:column>
+      
+      <h:column>
+        <f:facet name="header">#{msg.personAboutLabel}</f:facet>
+        #{item.about}
       </h:column>
       
       <h:column>

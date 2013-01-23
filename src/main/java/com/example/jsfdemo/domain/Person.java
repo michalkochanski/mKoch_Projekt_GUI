@@ -9,13 +9,10 @@ import javax.validation.constraints.Size;
 
 public class Person {
 	
-	private String firstName = "unknown";
-	private String zipCode = "";
-	private String pin = "";
-	private Date dateOfBirth = new Date();
-	private double weight;
-	private boolean married;
-	private int numOfChildren;
+	private String firstName = "exFirstName";
+	private String lastName = "exLastName";
+	private String pin = "9301";
+	private String about = "exAbout";
 	
 	@Size(min = 2, max = 20)
 	public String getFirstName() {
@@ -24,51 +21,28 @@ public class Person {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	
-	@Pattern(regexp = "[0-9]{2}-[0-9]{3}")
-	public String getZipCode() {
-		return zipCode;
+
+	@Size(min = 2, max = 20)
+	public String getLastName() {
+		return lastName;
 	}
-	public void setZipCode(String zipCode) {
-		this.zipCode = zipCode;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	
-	@Size(min = 2)
+	@Size(min = 2, max = 6)
 	public String getPin() {
 		return pin;
 	}
 	public void setPin(String pin) {
 		this.pin = pin;
 	}
-	
-	@Min(0)
-	public int getNumOfChildren() {
-		return numOfChildren;
+
+	@Size(min = 2, max = 40)
+	public String getAbout() {
+		return about;
 	}
-	public void setNumOfChildren(int numOfChildren) {
-		this.numOfChildren = numOfChildren;
+	public void setAbout(String about) {
+		this.about = about;
 	}
-	
-	@Past
-	public Date getDateOfBirth() {
-		return dateOfBirth;
-	}
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
-	
-	public double getWeight() {
-		return weight;
-	}
-	public void setWeight(double weight) {
-		this.weight = weight;
-	}
-	
-	public boolean isMarried() {
-		return married;
-	}
-	public void setMarried(boolean married) {
-		this.married = married;
-	}
-	
 }
