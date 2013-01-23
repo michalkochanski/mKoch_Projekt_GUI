@@ -2,4 +2,4 @@ Ten projekt to zaliczenie z tworzenia interfejsów, jest pozornie podobny do proj
 
 Uzna³em i¿ do tego projektu nie warto robiæ diagramu klas.
 
-Ten projekt nie edytuje bazy danych z projektu funkcjonalnego, dzia³a na liœcie zaimplementowanej przez Pana Neumanna.
+Ten projekt nie edytuje bazy danych z projektu funkcjonalnego, dzia³a na liœcie wewnêtrznej.
