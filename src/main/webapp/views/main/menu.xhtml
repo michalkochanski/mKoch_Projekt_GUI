@@ -5,6 +5,7 @@
 	xmlns:h="http://java.sun.com/jsf/html">
   <div>
 	<h:form>
+		<p><u><b>#{msg.menu}</b></u></p>
 	  <ul>
 		<li>
 		  <h:commandLink action="home?faces-redirect=true">
@@ -21,6 +22,10 @@
 		  </h:commandLink>
 		</li>
 	</ul>
+		<br></br><br></br><br></br>
+		<p>
+			#{msg.footer}
+		</p>
    </h:form>
   </div>
 </ui:composition>
